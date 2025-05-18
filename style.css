@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+}
+
+.bundle-title {
+  color: #1c9164
+}
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bundle-box {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bundle-box.active {
+  border-color: #00aa99;
+  background-color: #f0fdfa;
+}
+
+.bundle-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bundle-header input {
+  margin-right: 10px;
+}
+
+.bundle-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.8em;
+  margin-left: 5px;
+  color: #999;
+}
+
+.discount {
+  font-size: 0.8em;
+  color: green;
+  font-weight: bold;
+}
+
+.tag {
+  color: #008060;
+  padding: 2px 5px;
+  font-size: 0.7em;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.bundle-content {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.bundle-box.active .bundle-content {
+  display: block;
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pair span {
+  width: 30px;
+  font-weight: bold;
+}
+
+.pair select {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.summary {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.shipping {
+  color: green;
+  font-weight: bold;
+  text-align: left;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 12px;
+  background: #008060;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
